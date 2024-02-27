@@ -134,9 +134,12 @@ body {
 }
 /* NAV START */
 nav {
+  position: fixed;
+  width: 100%;
   background-color: #000;
   min-height: 10vh;
   padding: 1rem 0;
+  z-index: 1000; /* Any high number to ensure the nav bar is on top */
 }
 .nav-content {
   height: 80%;
@@ -164,6 +167,21 @@ button {
   font-size: 1.25rem;
   background-color: #121d28;
   color: #6ca48b;
+}
+/* Add the media query at the end */
+@media (max-width: 600px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .setting-button, .acess-platform button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+   .logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
 }
 /* HERO START */
 .hero {
