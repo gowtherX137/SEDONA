@@ -164,9 +164,9 @@ button {
 }
 .acess-platform button {
   padding: 10px 15px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   background-color: #121d28;
-  color: #6ca48b;
+  color: #bcc9ce;
 }
 /* Add the media query at the end */
 @media (max-width: 600px) {
@@ -178,10 +178,10 @@ button {
     padding: 5px 10px;
     font-size: 0.9rem;
   }
-   .logo {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
 }
+   .logo {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
 }
 /* HERO START */
 .hero {
