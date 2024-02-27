@@ -165,14 +165,18 @@ button {
 
 .platform-button {
   padding: 10px 15px;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   background-color: #121d28;
   color: #6ca48b;
   border: none;
 }
 @media screen and (max-width: 768px) {
-  .logo, .setting-button, .access-platform-button {
-    transform: scale(0.85); /* Reduce size by 15% */
+  .setting-button, .platform-button {
+    transform: scale(0.75); /* Reduce size by 15% */
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {transform: scale(0.85); /* Reduce size by 15% */
   }
 }
 /* HERO START */
@@ -725,7 +729,20 @@ input[type="range"]::-ms-fill-upper {
   color: #848895;
   font-size: 0.9rem;
 }
-
+@media screen and (max-width: 768px) {
+  .room-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .styled-button button {
+    padding: 0.5rem 1rem; /* Reduce padding */
+    font-size: 0.8rem; /* Reduce font-size */
+    margin-right: 0; /* Remove margin-right */
+  }
+  .unstyled-button {
+    font-size: 0.8rem; /* Reduce font-size */
+  }
+}
 .rooms .container {
   display: grid;
   width: 95%;
