@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEDONA</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <img class="logo" src="./public/logo-sedona.svg" alt="" />
+
+          <div>
+            <button class="setting-button">
+              <img src="./public/vector.svg" alt="" />
+            </button>
+            <button class="access-platform-button">Acess Platform</button>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-content">
+          <h2>Livestream and betting <br />platform</h2>
+          <p>
+            Sedona is the first live stream and betting
+            platform<br />
+            powered by solana
+          </p>
+          <a href="https://gypr.gitbook.io/sedona-white-paper/">
+            <button class="docs-button">Docs</button>
+        </a>
+          <button class="waitlist-button">Join waitlist</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <h3>Decentrailizing Houses</h3>
+        <div class="card-container">
+          <div class="one card">
+            <h4>SEDONA LIVE</h4>
+            <p class="first-paragraph">Making onchain fun again</p>
+            <div>
+              <img src="./public/group.svg" alt="" />
+              <img src="./public/group-100910.svg" alt="" />
+              <img src="./public/vector-1.svg" alt="" />
+              <img src="./public/vector-2.svg" alt="" />
+            </div>
+
+            <p>Bet on in house live-streamed games and win real money</p>
+            <button>Enter</button>
+          </div>
+
+          <div class="two card">
+            <h4>SEDONA ROOMS</h4>
+            <p class="first-paragraph">
+              Create your public room and allow users to bet on your live
+              streamed game; or create your private room with nft access and
+              play high stakes games with other users
+            </p>
+
+            <button>Learn more</button>
+          </div>
+
+          <div class="three card">
+            <h4>SPORTS LIVE</h4>
+            <p class="first-paragraph">
+              watch your favorite sport live streamed with dynamic odds and win
+              real money
+            </p>
+
+            <button>Coming Soon</button>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="bet">
+          <img src="/public/handonefingertap-1.svg" alt="" />
+          <h4>PICK YOUR CHALLENGER AND WIN REAL MONEY</h4>
+
+          <div class="winner-card">
+            <div class="winner-card-title1">
+              <h5>Pick your winner</h5>
+              <img src="/public/vector-65.svg" alt="" />
+            </div>
+
+            <div class="winner-group">
+              <button class="grid-item active">
+                <img src="./public/group-101155-1.svg" alt="" />
+                <h2>Ckay</h2>
+              </button>
+              <button class="grid-item">
+                <img src="./public/group-101160-1.svg" alt="" />
+                <h2>Rookie</h2>
+              </button>
+              <button class="grid-item">
+                <img src="./public/group-101158-1.svg" alt="" />
+                <h2>Larry</h2>
+              </button>
+              <button class="grid-item">
+                <img src="./public/group-101240-1.svg" alt="" />
+                <h2>Seargent</h2>
+              </button>
+            </div>
+            <div class="winner-card-title2">
+              <h5>You're Betting</h5>
+              <div class="winner-wallet">
+                <img src="/public/wallet.svg" alt="" />
+                <span style="font-size: 0.9rem">0 SOL</span>
+              </div>
+            </div>
+            <div class="winner-card-payment">
+              <div class="payment-card">
+                <div class="dropdown">
+                  <div class="dropdown-selected">
+                    <img src="/public/solana.svg" alt="Solana" /> SOL
+                  </div>
+                  <div class="dropdown-content">
+                    <div class="dropdown-item" data-value="option1">
+                      <img src="/public/solana.svg" alt="Solana" /> SOL
+                    </div>
+
+                    <!-- Add more options as needed -->
+                  </div>
+                </div>
+
+                <p>0.00</p>
+              </div>
+              <div class="slider">
+                <input type="range" min="0" max="100" value="0" />
+                <button>Max</button>
+              </div>
+
+              <button class="place-bet-button">Place Bet</button>
+            </div>
+          </div>
+        </div>
+        <div class="winner">
+          <div class="winner-card-title">
+            <h5>Pick your winner</h5>
+            <div class="winner-wallet">
+              <img src="/public/wallet.svg" alt="" />
+              <span style="font-size: 0.9rem">0 SOL</span>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <div class="winner-icon active">
+                <img src="./public/group-101155-1.svg" alt="" />
+              </div>
+              <div class="winner-bet">
+                <img src="./public/solana.svg" alt="" />
+                <input type="text" placeholder="0.00" />
+                <button>Place Bet</button>
+              </div>
+              <button class="max">Max</button>
+              <table id="payment">
+                <tr>
+                  <th>USER</th>
+                  <th>WAGER</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td><img src="/public/vector-44.svg" alt="" />3dQp...HU7f</td>
+                  <td class="amount">$0.00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="item">
+              <div class="winner-icon">
+                <img src="./public/group-101160-1.svg" alt="" />
+              </div>
+              <div class="winner-bet">
+                <img src="./public/solana.svg" alt="" />
+                <input type="text" placeholder="0.00" />
+                <button>Place Bet</button>
+              </div>
+              <button class="max">Max</button>
+              <table id="payment">
+                <tr>
+                  <th>USER</th>
+                  <th>WAGER</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td><img src="/public/vector-44.svg" alt="" />3dQp...HU7f</td>
+                  <td class="amount">$0.00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="item">
+              <div class="winner-icon">
+                <img src="./public/group-101158-1.svg" alt="" />
+              </div>
+              <div class="winner-bet">
+                <img src="./public/solana.svg" alt="" />
+                <input type="text" placeholder="0.00" />
+                <button>Place Bet</button>
+              </div>
+              <button class="max">Max</button>
+              <table id="payment">
+                <tr>
+                  <th>USER</th>
+                  <th>WAGER</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td><img src="/public/vector-44.svg" alt="" />3dQp...HU7f</td>
+                  <td class="amount">$0.00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="item">
+              <div class="winner-icon">
+                <img src="./public/group-101240-1.svg" alt="" />
+              </div>
+              <div class="winner-bet">
+                <img src="./public/solana.svg" alt="" />
+                <input type="text" placeholder="0.00" />
+                <button>Place Bet</button>
+              </div>
+              <button class="max">Max</button>
+              <table id="payment">
+                <tr>
+                  <th>USER</th>
+                  <th>WAGER</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/public/vector-44.svg" alt="" /> 3dQp...HU7f
+                  </td>
+                  <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                  <td><img src="/public/vector-44.svg" alt="" />3dQp...HU7f</td>
+                  <td class="amount">$0.00</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rooms">
+        <div class="rooms-content">
+          <div class="rooms-heading">
+            <img class="logo" src="./public/logo-sedona.svg" alt="" />
+
+            <h3 class="title">ROOMS</h3>
+          </div>
+
+          <p>
+            Create your public room and allow users to bet on your live streamed
+            games
+          </p>
+        </div>
+        <div class="room-buttons">
+          <div class="styled-button">
+            <button class="active">ALL</button>
+            <button>PUBLIC</button>
+            <button>PRIVATE</button>
+          </div>
+          <button class="unstyled-button">
+            <img src="/public/searching-icon.svg" alt="" />Browse
+          </button>
+        </div>
+
+        <div class="container">
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public/ca01a05ff8074fbf87943d547b1bb7a6---banner-501-668webp@2x.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Entry fee:</h5>
+                <button><img src="/public/solana.svg" alt="" /> 25</button>
+              </div>
+              <img src="/public/group-1@2x.png" alt="" />
+            </div>
+            <div class="live">Casino</div>
+          </div>
+
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public\Hamsters.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Free</h5>
+              </div>
+            </div>
+            <div class="live">Animal Stream</div>
+          </div>
+          <div class="item" data-type="private">
+            <img
+              class="banner"
+              src="/public\highstakes.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Entry fee:</h5>
+                <button><img src="/public/solana.svg" alt="" /> 25</button>
+              </div>
+              <img src="/public/group-1@2x.png" alt="" />
+            </div>
+            <div class="live">Poker</div>
+          </div>
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public\Rat roulette.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Free</h5>
+              </div>
+            </div>
+            <div class="live">Animal Stream</div>
+          </div>
+
+          <div class="item" data-type="private">
+            <img
+              class="banner"
+              src="/public/a12b84e6f2fd43a39c2b30173fc42f66---banner-501-668webp@2x.png"
+              alt=""
+            />
+          </div>
+          <div class="item" data-type="private">
+            <img
+              class="banner"
+              src="/public/a12b84e6f2fd43a39c2b30173fc42f66---banner-501-668webp@2x.png"
+              alt=""
+            />
+          </div>
+          <div class="item" data-type="private">
+            <img
+              class="banner"
+              src="/public/a12b84e6f2fd43a39c2b30173fc42f66---banner-501-668webp@2x.png"
+              alt=""
+            />
+          </div>
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public\Hamsters.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Free</h5>
+              </div>
+            </div>
+            <div class="live">Animal Stream</div>
+          </div>
+
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public\Hamsters.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Free</h5>
+              </div>
+            </div>
+            <div class="live">Animal Stream</div>
+          </div>
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public\Hamsters.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Free</h5>
+              </div>
+            </div>
+            <div class="live">Animal Stream</div>
+          </div>
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public\Hamsters.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Free</h5>
+              </div>
+            </div>
+            <div class="live">Animal Stream</div>
+          </div>
+
+          <div class="item" data-type="private">
+            <img
+              class="banner"
+              src="/public/a12b84e6f2fd43a39c2b30173fc42f66---banner-501-668webp@2x.png"
+              alt=""
+            />
+          </div>
+          <div class="item" data-type="private">
+            <img
+              class="banner"
+              src="/public/a12b84e6f2fd43a39c2b30173fc42f66---banner-501-668webp@2x.png"
+              alt=""
+            />
+          </div>
+          <div class="item" data-type="public">
+            <img
+              class="banner"
+              src="/public/ca01a05ff8074fbf87943d547b1bb7a6---banner-501-668webp@2x.png"
+              alt=""
+            />
+            <div class="banner-details">
+              <div>
+                <h5>Entry fee:</h5>
+                <button><img src="/public/solana.svg" alt="" /> 25</button>
+              </div>
+              <img src="/public/group-1@2x.png" alt="" />
+            </div>
+            <div class="live">Casino</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div style="display: flex; justify-content: center;">
+        <a href="https://gypr.gitbook.io/sedona-white-paper/overview/sedona-rooms/">
+            <button>See Docs</button>
+        </a>
+    </div>
+      <h5>Backed by Community of degens.</h5>
+      <div class="contact">
+        <img src="/public/logo-sedona-2.svg" alt="" />
+        <div style="padding: 0.5rem 0">Contact Us:</div>
+        <div><a href="mailto:someone@example.com">support@sedona.games</a></div>
+
+        <div style="padding-top: 0.5rem">
+          <a href="https://instagram.com/sedonagames"><img src="/public/group-100917.svg" alt="" /></a>
+          <a href="https://x.com/sedonagames"> <img src="/public/group-100919.svg" alt="" /></a>
+          <a href="https://t.me/sedonagames"> <img src="/public/group-100920.svg" alt="" /></a>
+          <a href="https://discord.gg/sedonagames"> <img src="/public/group-100921.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

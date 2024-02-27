@@ -1,0 +1,1022 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #080a0b;
+  font-family: "Inter", sans-serif;
+}
+/* NAV START */
+nav {
+  background-color: #000;
+  min-height: 10vh;
+  padding: 1rem 0;
+}
+.nav-content {
+  height: 80%;
+  border-bottom: 1px solid rgb(31, 30, 30);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  outline: none;
+  padding: none;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+}
+.setting-button {
+  padding: 10px 15px;
+  margin-right: 1rem;
+  font-size: 1rem;
+  background-color: #121d28;
+  color: #bcc9ce;
+}
+.acess-platform button {
+  padding: 10px 15px;
+  font-size: 1.25rem;
+  background-color: #121d28;
+  color: #6ca48b;
+}
+/* HERO START */
+.hero {
+  min-height: 80vh;
+  background: url("./public/5@2x.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #e4e4e4;
+}
+.hero h2 {
+  font-size: 4rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  line-height: 5rem;
+}
+.hero p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-top: 2rem;
+}
+.hero button {
+  margin-top: 2rem;
+}
+.hero-content {
+  padding: 7rem 3rem;
+}
+.docs-button {
+  background-color: #dffe00;
+  color: #1a1d29;
+  padding: 15px 25px;
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.waitlist-button {
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ABOUT START */
+
+.about {
+  min-height: 90vh;
+  color: #6e6f70;
+}
+.about h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #f8f8f8;
+  margin-bottom: 5rem;
+}
+.about h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f8f8f8;
+}
+.card-container {
+  /* width: 80%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px; */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Stack items vertically */
+  justify-content: space-between; /* Distribute space evenly */
+
+  box-shadow: 0 4px 8px #080a0b; /* Optional: add shadow for depth */
+
+  border-radius: 2px; /* Rounded corners */
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  grid-row: 1;
+  background: linear-gradient(#080a0b, #080a0b) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+  border-radius: 5px;
+  border: 0.5px solid transparent;
+  width: 20%;
+  padding: 1.5rem;
+  border-radius: 7px;
+  line-height: 1.5rem;
+  margin: auto;
+}
+.card div {
+  margin-bottom: 1.5rem;
+}
+.card div img {
+  padding-right: 1rem;
+  margin-top: 0.7rem;
+}
+.card .one p {
+  margin-top: 2.5rem;
+  color: #8d8d8d;
+}
+
+.three p {
+  margin-bottom: 4.5rem;
+  color: #8d8d8d;
+}
+.card .first-paragraph {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.card button {
+  background-color: #dffe00;
+  font-weight: 700;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+/* .one {
+  grid-column: 1 / 2;
+}
+.two {
+  grid-column: 2 / 3;
+}
+.three {
+  grid-column: 3/4;
+} */
+/* SERVICE START */
+.service {
+  background: linear-gradient(#080a0b, #080a0b) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+  border-radius: 5px;
+  border: 0.05px solid transparent;
+  min-height: 100vh;
+  width: 99%;
+  margin: auto;
+  color: #6e6f70;
+  display: flex;
+}
+
+.bet {
+  width: 28%;
+}
+.winner {
+  width: 72%;
+}
+.bet {
+  padding: 4rem 1rem;
+}
+.bet h4 {
+  color: #dffe00;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding-top: 1rem;
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
+.winner-card {
+  background: linear-gradient(#0e1217, #0e1217) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+  border-radius: 5px;
+  border: 0.5px solid transparent;
+}
+.winner-card h5 {
+  padding: 1.3rem;
+  font-size: 1rem;
+  color: #7e8082;
+}
+.winner-card-title1 img {
+  padding-right: 10px;
+}
+.winner-card-title2 img {
+  padding-right: 10px;
+}
+.winner-card-title1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgb(31, 30, 30);
+  width: 90%;
+  margin: auto;
+}
+.winner-group {
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns */
+  padding: 5px;
+}
+.grid-item {
+  padding: 5px;
+  margin: 1rem auto;
+  text-align: center;
+  border: 1px solid black;
+  width: 50%;
+  background-color: #0e1217;
+}
+.grid-item.active {
+  background: linear-gradient(#0e1217, #0e1217) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+  border-radius: 5px;
+  border: 0.5px solid transparent;
+}
+.grid-item h2 {
+  color: #fff;
+  padding-top: 3px;
+  font-size: 0.7rem;
+}
+.winner-wallet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.winner-card-title2 {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid rgb(31, 30, 30);
+}
+.winner-card-payment {
+  width: 90%;
+
+  margin: auto;
+}
+.payment-card {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 7px;
+  padding: 1rem;
+  background-color: #000;
+  align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+.winner-card-payment select {
+  padding: 10px;
+  background-color: #130e23;
+  outline: none;
+  border-radius: 7px;
+
+  border: none;
+  color: #fff;
+}
+.place-bet-button {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  background: linear-gradient(#080a0b, #080a0b) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #000;
+  border-radius: 0.5rem;
+  height: 0.6rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: #131a27;
+  border: 10px solid #4eaf90;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 7px;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+/* input[type="range"]::-moz-range-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+} */
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+
+  /*custom styles*/
+  background-color: #5cd5eb;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d;
+}
+.slider {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.slider button {
+  padding: 0.5rem;
+  color: #7b7d80;
+  background-color: #181c21;
+}
+
+.winner {
+  background: linear-gradient(#0e1217, #0e1217) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+  border-radius: 5px;
+  border: 0.1px solid transparent;
+  margin: 5rem 1rem;
+  padding-bottom: 3rem;
+  height: fit-content;
+}
+
+.winner-card-title {
+  padding: 1rem;
+  border-bottom: 1px solid rgb(31, 30, 30);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.winner-card-title h5 {
+  color: #fff;
+}
+.winner-card-title img {
+  padding-right: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+
+  margin-top: 2rem;
+}
+
+.item {
+  /* background-color: #ccc; */
+  /* padding: 20px; */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid black;
+  height: 100%;
+  position: relative;
+}
+
+.winner-icon {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1rem 0;
+  width: 50%;
+  margin: auto;
+}
+.winner-icon.active {
+  background: linear-gradient(#0e1217, #0e1217) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.winner-bet {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top: 1rem;
+}
+.winner-bet input {
+  margin: auto;
+  width: 55%;
+  height: 2.3rem;
+  background-color: #303338;
+  color: #64666a;
+  outline: none;
+  border: none;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-left: 2rem;
+}
+
+.winner-bet img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  background-color: #303338;
+  padding-left: 5px;
+}
+
+.winner-bet button {
+  margin: auto;
+  width: 65%;
+  height: 2.5rem;
+  border-radius: 0;
+  background-color: #121d28;
+  color: #969cab;
+  font-size: 0.7rem;
+  border: 1px solid black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.max {
+  padding: 0.5rem;
+  color: #7b7d80;
+  background-color: #181c21;
+  position: absolute;
+  right: 25px;
+  margin-top: 8px;
+}
+
+#payment {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+#payment td,
+#payment th {
+  padding: 8px;
+  font-size: 0.7rem;
+  border-bottom: 1px solid #07090b;
+}
+#payment td img {
+  padding-right: 0.4rem;
+}
+#payment tr {
+  background-color: #14171e;
+}
+
+#payment th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #07090b;
+  color: #676d7c;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.amount {
+  color: #fff;
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rooms {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  margin-top: 5rem;
+  background: linear-gradient(#080a0b, #080a0b) padding-box,
+    linear-gradient(to right, #4eaf90, #b2d5b2) border-box;
+
+  border: 0.05px solid transparent;
+  border-radius: 6px;
+}
+.rooms-content {
+  padding-top: 2rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  align-items: center;
+}
+.rooms-heading {
+  display: flex;
+  align-items: center;
+}
+.rooms-content img {
+  margin-left: 2rem;
+}
+.rooms-content .title {
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  color: #dffe00;
+}
+.rooms-content p {
+  margin-left: 2rem;
+  color: #7f7f7f;
+
+  font-size: 1.1rem;
+}
+.room-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 2rem auto;
+}
+.styled-button button {
+  padding: 1rem 2rem;
+  margin-right: 20px;
+  background-color: #1f2024;
+  color: #dffe00;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.styled-button button.active {
+  background-color: #dffe00;
+  color: #1f2024;
+}
+.unstyled-button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #848895;
+  font-size: 0.9rem;
+}
+
+.rooms .container {
+  display: grid;
+  width: 95%;
+  margin: auto;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  row-gap: 20px; /* gap between rows */
+  column-gap: 20px; /* gap between columns */
+}
+
+.rooms .item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.banner-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.banner-details h5 {
+  font-size: 0.7rem;
+  color: #fff;
+  margin-right: 5px;
+}
+.banner-details button {
+  background-color: #0d0f11;
+  color: #fff;
+  font-size: 0.7rem;
+  border: 1px solid black;
+}
+.banner-details button img {
+  width: 10px;
+}
+.banner-details div {
+  display: flex;
+  align-items: center;
+}
+.banner-details img {
+  width: 10px;
+  margin-right: 5px;
+}
+.live {
+  background-color: #16181b;
+  color: #585e69;
+  font-size: 0.8rem;
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+footer {
+  min-height: 60vh;
+  background-image: url("/public/vector-67.svg");
+  position: relative;
+}
+footer button {
+  background-color: #dffe00;
+  color: #000;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+}
+footer h5 {
+  color: #e2e2e2;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+footer .contact {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+  width: 150px;
+  font-family: "Chakra Petch", sans-serif;
+  background-color: #130e23;
+  outline: none;
+  border-radius: 7px;
+
+  border: none;
+}
+
+.dropdown-selected {
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: #000;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.dropdown-selected {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  position: relative; /* Ensure the relative positioning for the pseudo-element */
+}
+
+.dropdown-selected::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-top-color: #333; /* Arrow color */
+}
+
+/* Rotate the arrow when the dropdown is open */
+.dropdown-selected.open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+@media only screen and (max-width: 1232px) {
+  .card-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+  .card {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .service {
+    flex-direction: column;
+  }
+  .bet {
+    width: 90%;
+    margin: auto;
+  }
+  .winner {
+    width: 90%;
+    margin: auto;
+  }
+  .rooms-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rooms-content p {
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .styled-button button {
+    padding: 0.7rem 1rem;
+    margin-right: 10px;
+    background-color: #1f2024;
+    color: #dffe00;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .unstyled-button {
+    font-size: 1rem;
+  }
+  .rooms .container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  }
+  footer button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: fit-content;
+    position: absolute;
+    left: 5%;
+  }
+  footer h5 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    width: 90%;
+
+    position: absolute;
+    left: 5%;
+  }
+  footer .contact {
+    position: absolute;
+    left: 5%;
+
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  .winner-bet input {
+    margin: auto;
+    width: 50%;
+
+    font-weight: 800;
+    font-size: 0.8rem;
+
+    padding-left: 2rem;
+  }
+
+  .winner-bet button {
+    width: 50%;
+
+    font-size: 0.7rem;
+  }
+  .max {
+    right: 18px;
+  }
+}
+@media only screen and (max-width: 683px) {
+  .access-platform-button {
+    font-size: 1.1rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+  .hero-content {
+    padding: 3rem 3rem;
+  }
+
+  .about h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+  .card {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .winner {
+    width: 90%;
+    margin: auto;
+    overflow-x: scroll;
+  }
+  .rooms .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+
+  .winner-bet input {
+    width: 60%;
+    padding-left: 5px;
+    font-weight: 800;
+    font-size: 0.6rem;
+  }
+
+  .winner-bet button {
+    width: 40%;
+
+    font-size: 0.6rem;
+  }
+
+  .max {
+    right: 14px;
+  }
+}
+.your-element-class {
+  /* initial styles */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.your-element-class.animate {
+  /* styles after animation */
+  opacity: 1;
+  transform: translateY(0);
+}
