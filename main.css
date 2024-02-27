@@ -690,8 +690,8 @@ input[type="range"]::-ms-fill-upper {
   margin-left: 2rem;
 }
 .rooms-content .title {
-  margin-left: 2rem;
-  font-size: 2.5rem;
+  margin-left: 1.8rem;
+  font-size: 2.2rem;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
   color: #dffe00;
@@ -728,8 +728,7 @@ input[type="range"]::-ms-fill-upper {
   align-items: center;
   color: #848895;
   font-size: 0.9rem;
-}
-@media screen and (max-width: 768px) {
+}@media screen and (max-width: 768px) {
   .room-buttons {
     flex-direction: column;
     align-items: center;
@@ -752,7 +751,6 @@ input[type="range"]::-ms-fill-upper {
   row-gap: 20px; /* gap between rows */
   column-gap: 20px; /* gap between columns */
 }
-
 .rooms .item img {
   max-width: 100%;
   height: auto;
