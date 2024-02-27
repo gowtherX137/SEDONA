@@ -134,55 +134,50 @@ body {
 }
 /* NAV START */
 nav {
+  position: fixed;
+  width: 100%;
   background-color: #000;
-  min-height: 10vh;
+  height: 60px; /* Set the height to 90px */
   padding: 1rem 0;
+  z-index: 1000;
 }
 .nav-content {
-  height: 80%;
-  border-bottom: 1px solid rgb(31, 30, 30);
+  height: auto; /* Adjust this as needed */
+  border-bottom: none;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Add this line */
 }
 button {
   outline: none;
-  padding: none;
   cursor: pointer;
   border-style: none;
   border-radius: 5px;
 }
 .setting-button {
   padding: 10px 15px;
-  margin-right: 1rem;
-  font-size: 1rem;
+  font-size: 1rem; /* Make the font-size the same as the access button */
   background-color: #121d28;
   color: #bcc9ce;
 }
-.acess-platform button {
+
+.access-platform-button {
   padding: 10px 15px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   background-color: #121d28;
-  color: #bcc9ce;
+  color: #6ca48b;
+  border: none;
 }
-/* Add the media query at the end */
-@media (max-width: 600px) {
-  .nav-content {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 768px) {
+  .logo, .setting-button, .access-platform-button {
+    transform: scale(0.85); /* Reduce size by 15% */
   }
-  .setting-button, .acess-platform button {
-    padding: 5px 10px;
-    font-size: 0.9rem;
-  }
-}
-   .logo {
-    width: 80px; /* Adjust as needed */
-    height: 80px; /* Adjust as needed */
 }
 /* HERO START */
 .hero {
-  min-height: 80vh;
+  min-height: 60vh; /* Keep the min-height as before */
+  padding-top: 15vh; /* Increase the top padding */
   background: url("./public/5@2x.png");
   background-position: right;
   background-size: contain;
