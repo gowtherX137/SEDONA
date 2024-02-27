@@ -1008,15 +1008,3 @@ a {
     right: 14px;
   }
 }
-.your-element-class {
-  /* initial styles */
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.5s ease-out;
-}
-
-.your-element-class.animate {
-  /* styles after animation */
-  opacity: 1;
-  transform: translateY(0);
-}

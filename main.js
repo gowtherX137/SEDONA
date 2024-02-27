@@ -90,12 +90,3 @@ document.addEventListener("DOMContentLoaded", function () {
       "%, #000 100%)";
   };
 });
-$(window).scroll(function() {
-  $('.your-element-class').each(function(){
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-          $(this).addClass('animate');
-      }
-  });
-});
